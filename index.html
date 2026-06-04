@@ -82,7 +82,7 @@
   .nav-links{display:flex;align-items:center;gap:4px}
   .nav-link{
     font-family:var(--font-mono);font-size:13px;letter-spacing:.02em;color:var(--muted-foreground);
-    padding:8px 14px;transition:color .2s ease,background .2s ease;
+    padding:8px 14px;border-radius:8px;transition:color .2s ease,background .2s ease;
   }
   .nav-link:hover{color:var(--foreground);background:var(--muted)}
   .nav-links .nav-cta{margin-left:8px}
@@ -90,7 +90,8 @@
   /* Button-Stil unverändert beibehalten */
   .nav-cta{
     font-family:var(--font-mono);font-size:13px;letter-spacing:.02em;
-    padding:9px 18px;border:1px solid var(--border);color:var(--foreground);
+    padding:9px 18px;border:1px solid var(--border);
+    background:#fafafa;color:#0a0a0a;border-radius:8px;
     transition:background .25s ease,color .25s ease,border-color .25s ease;
   }
   .nav-cta:hover{background:var(--foreground);color:var(--background);border-color:var(--foreground)}
@@ -288,8 +289,7 @@
     <div class="nav-links">
       <a href="#features" class="nav-link">Features</a>
       <a href="#vorteile" class="nav-link">Vorteile</a>
-      <a href="#waitlist" class="nav-link">Warteliste</a>
-      <a href="#waitlist" class="nav-cta">Auf die Warteliste</a>
+      <a href="#waitlist" class="nav-cta">Zur Warteliste</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
       <svg class="menu-icon" width="22" height="22" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -302,9 +302,8 @@
     <div class="nav-mobile-links">
       <a href="#features" class="nav-link nav-link-mobile">Features</a>
       <a href="#vorteile" class="nav-link nav-link-mobile">Vorteile</a>
-      <a href="#waitlist" class="nav-link nav-link-mobile">Warteliste</a>
     </div>
-    <a href="#waitlist" class="nav-cta nav-cta-mobile">Auf die Warteliste</a>
+    <a href="#waitlist" class="nav-cta nav-cta-mobile">Zur Warteliste</a>
   </div>
 </header>
 
